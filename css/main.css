@@ -1,0 +1,539 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #f0b934;
+    text-shadow: none;
+}
+
+::selection {
+    background: #f0b934;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* Font Set-up */
+
+/* Apercu and Arial */
+
+@font-face {
+    font-family: "Apercu";
+    src: url(../fonts/apercu_medium_pro.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Apercu";
+    src: url(../fonts/apercu_bold_pro.otf);
+    font-weight: bold;
+}
+
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body{
+    font-family:"Apercu";
+    background:#f7f7f7;
+}
+
+
+.container{
+    position:absolute;
+    margin:auto;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+}
+
+.box{
+    display:block;
+    max-width:100%;
+    top:0;
+    left:0;
+    justify-content: center;
+}
+
+.within{
+    padding:.5em;
+    top:0;
+    left:0;
+    z-index:999;
+    bottom:0;
+    right:0;
+    width:50%:
+    height:50%;
+    margin: auto;
+}
+
+.center{
+    margin:auto;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+
+
+
+
+
+/* AAA */
+
+.centralcontainer{
+    width:70%;
+    max-width:900px;
+    margin:auto;
+    clear:both;
+
+}
+
+.centralrow{
+    clear:both;
+    margin:auto;
+    width:70%;
+    max-width:800px;
+    padding:1em;
+}
+
+.leftbg{
+    position:absolute;
+    float:left;
+    clear:both;
+    margin-top:.5em;
+    font-family:"Arial";
+    font-weight:600;
+    font-size:148px;
+    color:#cccccc;
+    z-index:-9999;
+}
+
+.images{
+    position:absolute;
+    z-index:-999999999999999999999;
+    float:left;
+    width:100%;
+    margin:0 auto;
+    width:100%;
+}
+
+
+.leftimg{
+    position:relative;
+    width:500px
+    float:left;
+    margin:1em;
+    clear:both;
+}
+
+
+.rightimg{
+    position:relative;
+    width:500px;
+    float:right;
+    margin:1em;
+    clear:both;
+}
+
+.right{
+    position:relative;
+    width:70%;
+    float:right;
+    clear:both;
+}
+
+.right p{
+    font-size:22px;
+}
+
+.team_thing{
+    padding:1em;
+    display:inline-block;
+}
+
+.team_thing_front{
+    width:280px;
+    max-height:800px;
+    float:left;
+    height:350px;
+    line-height:50px;
+    text-align:center;
+    font-family:"Rubik";
+    color:#000;
+    margin:.5em;
+    box-shadow:0 0 20px #ccc;
+}
+
+.team_thing_back h3{
+    font-family:"Rubik" !important;
+    font-weight:100;
+    text-align: center;
+    font-style:normal;
+    border-bottom:2px solid #3535c8;
+    display:inline-block;
+    margin:0;
+}
+
+.team_thing_back{
+    height:320px;
+    position:relative;
+    float:right;
+    margin:.5em;
+    background:white;
+    padding:1em;
+    box-shadow:0 0 20px #ccc;
+    width:320px;
+}
+
+.team_thing_back a{
+    display:inline-block;
+    text-decoration: none;
+    background:#3535c8;
+    color:white;
+    padding:1em;
+    font-family:"Rubik";
+    border-radius:25px;
+    width:50%;
+    box-shadow:0 0 10px #ccc;
+}
+
+.team_thing_back p{
+    font-size:14px;
+    font-weight:100;
+    text-align: justify;
+}
+
+#scheme h2{
+    text-align: center;
+    padding:3em;
+    text-decoration: underline;
+}
+
+
+a{
+    color:#3535c8;
+}
+
+h1 a:hover{
+    color:#000;
+    background-image:url(../img/highlightYellow.png);
+    background-position:bottom;
+}
+
+
+/* Services */
+
+.service_list{
+    font-size:62px;
+}
+
+.service_list em{
+    font-size:18px;
+    text-align:center;
+}
+
+/* Link */
+.link_buttons a{
+    text-decoration: none;
+    font-size:26px;
+    text-align:center;
+    font-style: italic;
+    color:black;
+    display: inline-block;
+    margin:.5em;
+}
+
+
+/* Contact */
+
+.formShort{
+    border:0;
+    display:inline-block;
+    padding:1em;
+    margin-right:1em;
+    min-width:30%;
+}
+
+.formTextarea{
+    padding:1em;
+    display:block;
+    border:0;
+    height:150px;
+    width:80%;
+}
+
+.formSubmit{
+    display:block;
+    background:#3535c8;
+    border:0;
+    margin-top:1em;
+    padding:1em;
+    font-family:"Rubik";
+    font-weight:bold;
+    font-size:24px;
+}
+
+#contact h1{
+    font-size:72px;
+    clear:both;
+    text-align:center;
+    margin:0;
+    display:inline-block;
+    background-image:url(../img/highlightRed.png);
+}
+
+#contact p{
+    margin:0;
+    text-align:center;
+}
+
+.hireKids{
+    font-family:"Merriweather";
+    font-weight:800;
+    font-size:32px;
+    text-align:center;
+    background-image:url(../img/squiggle.png);
+    padding:1em;
+}
+
+.hireKids u{
+    color:#e72b2b;
+    text-decoration:none;
+    font-size:22px;
+    display:block;
+}
+
+.hireKids strong{
+    color:#f0b934;
+    font-size:37px;
+    font-style:italic;
+}
+
+.typedTestimonials{display:inline;vertical-align: middle;margin:auto;}
+
+.testimonials{
+    background:#e72b2b;
+    background-position:bottom;
+    background-size:cover;
+    padding:.5em;
+    text-align:center;
+    display:block;
+    font-size:38px;
+    font-family:"Rubik";
+    width:100%;
+    height:220px;
+    border-style:inset;
+    border-color:#e72b2b;
+    border-width: 20px;
+    box-sizing:border-box;
+    font-family:"Merriweather";
+    font-weight:800;
+    left:0;
+    color:#f0b934;
+    margin-bottom:3em;
+}
+
+.testimonials em{
+    font-size:24px;
+    display:inline-block;
+    border-bottom:2px solid #f0b934;
+    font-weight:300;
+}
+
+.desperate{
+    font-size:52px;
+    text-align:center;
+    margin-bottom:3em;
+}
+
+#dream .collegeometer{
+    height:400px;
+    border:1px solid #ccc;
+    width:20px;
+    padding:1em;
+    border-radius:20px;
+}
+
+#dream h1{
+    font-size:48px;
+    text-align:center;
+}
+
+#dream p{
+    font-size:32px;
+}
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

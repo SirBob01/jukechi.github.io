@@ -3,10 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>Jukechi!</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <link rel="icon" type="image/png" href="favicon.png" />
+        
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
 
@@ -15,7 +17,23 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
+        
+        <div class="navigation">
+            <span class="close" style="float:right;"><a onclick="close();"><img src="img/headerClose.png" /></a></span>
+            <a href="#team">Team</a>
+            <a href="#scheme">Scheme</a>
+            <a href="#dream">Dream</a>
+            <span class="navigationSmaller">
+                <a href="http://fb.com">Facebook</a>
+                <a href="#contact">Email us</a>
+            </span>
+        </div>
 
+        <div class="header">
+        <div class="logo"><img src="img/headerLogo.png" /></div>
+        <div class="hamburger"><a onclick="hamburger();"><img src="img/headerHamburger.png" /></a></div>
+        </div>
+        
         <div class="container">
         <div class="box" style="height:100%;">
             
@@ -23,8 +41,8 @@
             <div class="centralcontainer">
             <div class="leftbg">Hello.</div>
             <div class="right">
-            <p><strong><span style="color:#3535c8;">Chia</span>. <span style="color:#e72b2b;">Keith</span>. <span style="color:#f0b934;">Julia</span>.</strong></p>
-            <p><strong>Hello!</strong> We're three high school seniors with big dreams and even bigger needs for cash. We offer design and development services as fueled by our passion, love, and experience to earn for the college application season.</p>
+            <p><strong><span style="color:#f0b934;">Julia</span>. <span style="color:#3535c8;">Chia</span>. <span style="color:#e72b2b;">Keith</span>.</strong> </p>
+            <p><strong>We're Jukechi!</strong> Just three high school seniors with big dreams and even bigger needs for cash. We offer design and development services as fueled by our passion, love, and experience to earn for the college application season.</p>
             </div>  
                 
             </div>
@@ -34,9 +52,12 @@
             <center>
                 <a href="#team"><center><img src="img/iconPencil.png" /><br />The Team</center></a>
                 
-                <a href="#scheme"><center><img src="img/iconCall.png" /><br />The Scheme</center></a>
+                <a href="#scheme"><center><img src="img/iconLaptop.png" /><br />The Scheme</center></a>
                 
-                <a href=""><center><img src="img/iconHeart.png" /><br />The Dream</center></a>  
+                <a href="#dream "><center><img src="img/iconHeart.png" /><br />The Dream</center></a>  
+                <br />
+                <a href="http://fb.com"><center><img src="img/iconFb.png" /></center></a> 
+                <a href="#contact"><center><img src="img/iconMail.png" /></center></a>
             </center>
                 </div> 
             </div>
@@ -65,7 +86,7 @@
                 <h3>Chia Amisola</h3>
                 <p>Chia is a web developer and writer whose passion lies in meaningful creations and impactful design, telling stories through data. She also enjoys writing angsty teenage poetry and listening to obscure emo bands.</p>
                 <p style="text-align:center;font-size:18px;">Front-end<br />Branding<br />UX/UI<br />Copywriting</p>
-                <a href="#">View Chia's CV</a>
+                <a href="http://chiaski.com/ChiaraAmisolaCV.pdf">View Chia's CV</a>
                 </center>
                 </div>
                 </div>
@@ -75,9 +96,10 @@
                 </div>    
                 <div class="team_thing_back" style="float:left;">
                 <center>
-                <h3>Keith Leonardo</h3>
+                <h3 style="border-bottom:#e72b2b 2px solid;">Keith Leonardo</h3>
                 <p>Keith is a software and web developer who c a n n o t trust himself to do front-end work.</p>
                 <p style="text-align:center;font-size:18px;"><br />Back-end<br />Software design<br />Software development<br />Uh.</p>
+                <a href="#" style="background:#e72b2b;">Hello Keithy!</a>
                 </center>
                 </div>
                 </div>
@@ -87,10 +109,10 @@
                 </div>    
                 <div class="team_thing_back">
                 <center>
-                <h3>Chia Amisola</h3>
-                <p>Chia is a web developer and writer whose passion lies in meaningful creations and impactful design, telling stories through data. She also enjoys writing angsty teenage poetry and listening to obscure emo bands.</p>
-                <p style="text-align:center;font-size:18px;">Front-end<br />Branding<br />UX/UI<br />Copywriting</p>
-                <a href="#">View Chia's CV</a>
+                <h3 style="border-bottom:#f0b934 2px solid;">Julia Saulog</h3>
+                <p>Julia is a beautiful butterfly!</p>
+                <p style="text-align:center;font-size:18px;">Graphic and print design<br />Editorial design</p>
+                <a href="#" style="background:#f0b934;">Julia's Portfolio</a>
                 </center>
                 </div>
                 </div>
@@ -101,10 +123,9 @@
             
             
         </div>
-        <div id="scheme" class="box" style="min-height:500px;">
+        <div id="scheme" class="box" style="min-height:500px;margin-top:3em;">
             
             <div class="images">
-            <div class="leftimg"><img src="img/imgA.png" /></div>
             <div class="rightimg"></div>
             <div class="leftimg"></div>
             
@@ -112,13 +133,16 @@
             <div class="within centralcontainer" style="width:80%;">
                 <h1>We offer development and design services. Each of us are skilled at different things.</h1>
                 
+                <center>
                 <span class="service_list">
                 <span style="background-image:url(img/highlightRed.png);">Web development</span><br />
                 <span style="background-image:url(img/highlightBlue.png);">Branding</span><br />
                 <span style="background-image:url(img/highlightYellow.png);">Multimedia design  </span><br />
+                <span style="background-image:url(img/highlightRed.png);">Some software dev</span><br />
+                <span style="background-image:url(img/highlightBlue.png);">And stuff...</span></center><br />
                 <center><em>(Think of us as a low budget branding company.)</em></center>
                 
-                </span>
+                </span><br /><br />
                 
                 <br /><br />
                 <h1 style="font-size:32px;">Okay, so I hire you kids. What next?</h1>
@@ -138,10 +162,10 @@
             </div>
             <div class="centralcontainer" style="margin-top:4em;margin-bottom:2em;width:100%;background-image:url(img/lyricsSwingswing.png);padding:2em;">
             
-            <center><h2>Still unconvinced?</h2></center>
+            <center><h2>Still unconvinced?</h2></center><center>
             <span class="testimonials">
-                <div class="typedTestimonials">Testimonials go here. If you're seeing this, there's a mistake.</div>                
-            </span>
+                <div class="typedTestimonials">Testimonials go here. If you're seeing this, there's a mistake.</div>       
+            </span></center>  
                 <br /><br />
                 <h1 class="desperate">Interested?<br /><a href="#contact">Hit us up.</a></h1>
             </div>

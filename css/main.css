@@ -16,6 +16,19 @@ html {
     text-shadow: none;
 }
 
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #ccc; 
+}
+
+
 hr {
     display: block;
     height: 1px;
@@ -68,7 +81,48 @@ textarea {
 }
 
 
+/* Header */
+.header{
+    position:fixed;
+    top:0; left:0;
+    width:100%;
+    padding:.5em;
+    z-index:99999;
+}
 
+.header .hamburger{
+    padding:1em;
+    right:5%; top:0;
+    position:absolute;
+}
+
+.navigation{
+    position:fixed;
+    top:0; left:0;
+    width:100%; height:100%;
+    background:#e72b2b;
+    z-index:99999999;
+    box-sizing: border-box;
+    padding:2em;
+}
+
+.navigation a{
+    font-family:"Merriweather";
+    text-decoration: none;
+    font-size:48px;
+    display:block;
+    color:#f0b433;
+    font-weight:900;
+    margin:.5em;
+}
+
+.navigation a:hover{
+    color:black;
+}
+
+.navigationSmaller a{
+    font-size:32px !important;
+}
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -368,7 +422,7 @@ h1 a:hover{
     display:block;
     font-size:38px;
     font-family:"Rubik";
-    width:100%;
+    width:80%;
     height:220px;
     border-style:inset;
     border-color:#e72b2b;
@@ -379,6 +433,7 @@ h1 a:hover{
     left:0;
     color:#f0b934;
     margin-bottom:3em;
+    max-width:800px;
 }
 
 .testimonials em{

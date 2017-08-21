@@ -45,3 +45,11 @@ $(document).ready(function() {
 function hamburger(){
     $(".navigation").toggle();
 }
+
+function mail() {
+	email = "s2005141@dlszobel.edu.ph";
+	sender = document.getElementsByName("senderEmail")[0];
+	name = document.getElementsByName("senderName")[0];
+	message = document.getElementsByName("senderMessage")[0];
+	window.location.href = "mailto:"+email+"?subject="+name+"%20"+sender+"&body="+message;
+}
